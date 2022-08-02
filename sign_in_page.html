@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Let's Chat</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="sign_in_page.js"></script>
+</head>
+
+<body>
+  <div>
+    <center>
+      <div class="row">
+        <div class="center_style">
+          <h1 class="display-1">
+            Let's Chat <sup>
+              <img src="m2.png">
+            </sup>
+          </h1>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 column, login_div, center_style, container pt-5">
+
+          <img src="logo.png" class="logo">
+          <h3 id="catchphrase" class="">You are only one click away from the <b><i>"SOCIAL UNIVERSE"</i></b>...</h3 <br>
+          <br>
+          <div class="form-group"></div>
+          <h2 id="sign_in_tag" class=""><b>Sign in</b></h2>
+          <br>
+          <h4 id="label_username"> <b>User Name</b></h4>
+          <input type="text" id="user_name" class="form-control" placeholder="User Name">
+          <h4 id="warning"> Please enter username here:</h4>
+          <br>
+          <br>
+          <button id="login_button" class="btn btn-danger" onclick="addUser()">Log in</button>
+          <br><br>
+        </div>
+      </div>
+    </center>
+  </div>
+</body>
+
+</html>
